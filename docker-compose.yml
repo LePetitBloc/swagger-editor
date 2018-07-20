@@ -1,0 +1,13 @@
+version: '3.2'
+
+services:
+  editor-synced:
+    build:
+      context: ./
+    ports:
+      - 8686:8080
+      - 3000:3000
+      - 3001:3001
+    volumes:
+      - ./spec:/usr/share/nginx/html/data/
+      - ./browsersync:/data/browsersync
