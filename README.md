@@ -6,7 +6,7 @@ A configurable live reloaded swagger-editor instance.
 
 Edit your OpenApi specification with your favorite IDE and test it with swagger-editor.
 
-### JetBrains plugin 
+## JetBrains plugin 
 If your using one of JetBrains IDEs , install the [Swagger Plugin](https://plugins.jetbrains.com/plugin/8347-swagger-plugin).
 
 

@@ -1,5 +1,10 @@
 FROM swaggerapi/swagger-editor
 
+LABEL maintainer='jules@lepetitbloc.net'
+EXPOSE 8080
+EXPOSE 3000
+EXPOSE 3001
+
 RUN apk add --update nodejs
 RUN npm -g install browser-sync
 
