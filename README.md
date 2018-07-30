@@ -6,19 +6,6 @@ A configurable live reloaded swagger-editor instance.
 
 Edit your OpenApi specification with your favorite IDE and test it with swagger-editor.
 
-## Installation
-
-```bash
-docker build . -t swagger-editor-lepetitbloc
-```
-
-OR 
-using [docker-compose](docker-compose.yml) 
-
-```bash
-docker-compose up -d --build
-```
-
 ### JetBrains plugin 
 If your using one of JetBrains IDEs , install the [Swagger Plugin](https://plugins.jetbrains.com/plugin/8347-swagger-plugin).
 
@@ -36,7 +23,7 @@ Connect [http://localhost:8686](http://localhost:8686) and edit the [swagger.yml
 See [docker-compose.yml](docker-compose.yml)
 
 ## Development 
-### Rebuild the image : 
+### Rebuild the image
 ```bash
 docker build . -t swagger-editor-lepetitbloc
 ```
@@ -48,7 +35,7 @@ using [docker-compose](docker-compose.yml)
 docker-compose build
 ```
 
-### Run it: 
+### Run it
 
 ```bash
 docker run -d -p 8686:8080 -p 3000:3000 -p 3001:3001 -v `pwd`/spec:/usr/share/nginx/html/data/ swagger-editor-lepetitbloc
