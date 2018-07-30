@@ -17,5 +17,5 @@ VOLUME /usr/share/nginx/html/data/
 COPY ./browsersync /data/browsersync
 WORKDIR /data/browsersync
 
-COPY ./start.sh /usr/local/bin/start.sh
-ENTRYPOINT ["/usr/local/bin/start.sh"]
+COPY ./docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
+ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
