@@ -24,6 +24,31 @@ If your using one of JetBrains IDEs , install the [Swagger Plugin](https://plugi
 
 
 ## Usage
+```bash
+docker run -d -p 8686:8080 -p 3000:3000 -p 3001:3001 -v `pwd`/spec:/usr/share/nginx/html/data/ lepetitbloc/swagger-editor
+```
+
+Connect [http://localhost:8686](http://localhost:8686) and edit the [swagger.yml](spec/swagger.yml) file in your favorite IDE. 
+
+:rotating_light: Beware of the cache ! 
+
+## Usage with docker-compose 
+See [docker-compose.yml](docker-compose.yml)
+
+## Development 
+### Rebuild the image : 
+```bash
+docker build . -t swagger-editor-lepetitbloc
+```
+
+OR 
+using [docker-compose](docker-compose.yml) 
+
+```bash
+docker-compose build
+```
+
+### Run it: 
 
 ```bash
 docker run -d -p 8686:8080 -p 3000:3000 -p 3001:3001 -v `pwd`/spec:/usr/share/nginx/html/data/ swagger-editor-lepetitbloc
@@ -33,10 +58,6 @@ using [docker-compose](docker-compose.yml)
 ``` 
 docker-compose start
 ```
-
-Connect [http://localhost:8686](http://localhost:8686) and edit the [swagger.yml](spec/swagger.yml) in your favorite IDE. 
-
-:rotating_light: Beware of the cache ! 
 
 ## Code of conduct
 
